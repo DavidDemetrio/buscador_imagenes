@@ -1,5 +1,11 @@
-body {
-  background: #2C3E50;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #B9B9B9, #3C4753);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #B9B9B9, #3C4753); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/**
+  * Snnipet
+  * Allow to add padding in a box, this don´t modified the size or properties
+*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
