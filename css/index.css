@@ -1,11 +1,12 @@
 /**
   * Snnipet
   * Allow to add padding in a box, this don´t modified the size or properties
+  * in the elements
 */
 html {
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing: inherit
 }

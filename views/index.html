@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscador de imágenes</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/tailwind.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/tailwind.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    <!-- Img animation SEARCHING -->
-    <lottie-player autoplay loop mode="normal" src="js/icon_searching.json" style="width: 130px; margin: 10px auto;"></lottie-player>
-    <h1 class="text-center text-3xl text-violet-950 my-10 font-bold uppercase">Buscador de Imágenes</h1>
+    <h1 class="text-center text-3xl text-violet-950 my-10 font-bold uppercase">+ IMAGES</h1>
 
     <div class="buscador max-w-lg mx-auto">
         <form id="formulario" class="flex">
@@ -28,11 +27,12 @@
             />
         </form>
     </div>
-
+    
+    <!-- Results images -->
     <div id="resultado" class="container mx-auto mt-10 flex flex-wrap"></div>
+    <!-- Pagination result -->
     <div id="paginacion" class="container mx-auto mb-10 text-center flex flex-wrap mx-auto justify-center"></div>
 
-    <!-- <script src="js/app.js"></script> -->
-    <script src="js/lottie-player.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 </html>

@@ -1,14 +1,18 @@
 html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* Sections
     ========================================================================== */
 /* Remove the margin in all browsers. */
-body { margin: 0 }
+body {
+  margin: 0;
+}
 /* Render the "main" element consistently in IE. */
-main { display: block; }
+main {
+  display: block;
+}
 
 /**
    * Correct the font size and margin on `h1` elements within `section` and
@@ -45,7 +49,9 @@ pre {
 /**
    * Remove the gray background on active links in IE 10.
 */
-a { background-color: transparent }
+a {
+  background-color: transparent;
+}
 
 /**
    * 1. Remove the bottom border in Chrome 57-
@@ -95,9 +101,13 @@ sup {
   vertical-align: baseline;
 }
 
-sub { bottom: -0.25em }
+sub {
+  bottom: -0.25em;
+}
 
-sup { top: -0.5em }
+sup {
+  top: -0.5em;
+}
 
 /* Embedded content
     ========================================================================== */
@@ -284,7 +294,6 @@ template {
 /**
    * Add the correct display in IE 10.
 */
-
 [hidden] {
   display: none;
 }
