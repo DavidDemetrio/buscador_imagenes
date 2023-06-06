@@ -35,9 +35,22 @@ const buscarImagenes = () => {
 
     fetch(url)
         .then(respuesta => respuesta.json())
-        .then(resultado => {
-            totalPaginas = calcularPaginas(resultado.totalHits);
-            mostrarImagenes(resultado.hits);
+        .then(resultado_API => {
+            if (resultado_API.total === 0) {
+                resultado.innerHTML = `
+                    <lottie-player
+                        src="../public/images/96526-search-not-found.json"
+                        autoplay
+                        loop
+                        style="width: 400px; margin: auto;"
+                    ></lottie-player>
+                `;
+                paginacionDiv.style.display = "none";
+                return;
+            }
+            paginacionDiv.style.display = "block";
+            totalPaginas = calcularPaginas(resultado_API.totalHits);
+            mostrarImagenes(resultado_API.hits);
         })
 }
 
@@ -60,6 +73,7 @@ const imprimirPaginador = () => {
         boton.classList.add('siguiente', 'bg-transparent', 'shadow-md', 'hover:bg-blue-500', 'text-blue-700', 'font-semibold',
         'hover:text-white', 'py-1', 'px-4', 'mr-2', 'mb-4', 'border', 'border-blue-400', 'hover:border-transparent', 'rounded');
         boton.onclick = () => {
+            boton.classList
             paginaActual = value;
             buscarImagenes();
         }
